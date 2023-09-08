@@ -7,12 +7,14 @@ const LanguageSwitcher = () => {
     i18n.changeLanguage(lng);
   };
   return (
-    <div>
-      <select onChange={(e) => changeLanguage(e.target.value)}>
+    <div className="language">
+      <select
+        onChange={(e) => changeLanguage(e.target.value)}
+        className="language__select"
+      >
         <option value="en">En</option>
         <option value="hr">Hr</option>
       </select>
-      
     </div>
   );
 };

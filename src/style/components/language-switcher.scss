@@ -1,0 +1,15 @@
+.language {
+  background-color: var(--color-carmine-3);
+  height: 3rem;
+  padding: 0.4rem;
+  display: flex;
+
+  flex-direction: row-reverse;
+  &__select {
+    background-color: var(--color-gray-500);
+    color: var(--color-white-400);
+    font-size: 1rem;
+    width: 4rem;
+    height: 2rem;
+  }
+}

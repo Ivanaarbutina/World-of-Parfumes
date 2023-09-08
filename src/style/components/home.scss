@@ -1,0 +1,12 @@
+.home {
+  & h1 {
+    font-family: "Passions Conflict", cursive;
+    font-size: 5rem;
+    font-weight: 100;
+    text-align: center;
+    background-image: url(./../../assets/girl-garden-shooted-from.jpg);
+  }
+  &__main-img {
+    width: 50%;
+  }
+}

@@ -1,4 +1,7 @@
 {
   "welcomeMessage": "Welcome to our site",
-  "greeting": "Hello"
+  "greeting": "Hello",
+  "parfumes": "Parfumes",
+  "about": "About us",
+  "contact": "Contact"
 }
