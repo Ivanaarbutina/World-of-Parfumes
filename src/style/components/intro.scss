@@ -1,0 +1,29 @@
+.parfumes {
+  & h1 {
+    font-family: "Passions Conflict", cursive;
+    font-size: 5rem;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  &__forest {
+    background-image: url(../assets/girl-garden-shooted-from.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%; // Dodajte širinu
+    height: 33rem; // Dodajte visinu
+    color: var(--color-white-400);
+    display: flex;
+    justify-content: space-between;
+    &__img {
+      width: 20rem;
+      margin: 4rem;
+      border-radius: 2rem;
+    }
+    & p {
+      width: 25rem;
+      font-size: 1.3rem;
+    }
+  }
+}

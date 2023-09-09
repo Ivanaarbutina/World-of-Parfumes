@@ -1,7 +1,10 @@
 {
   "welcomeMessage": "Dobrodosli na nas site",
   "greeting": "Pozdrav",
-  "parfumes":"Parfemi",
+  "parfumes": "Parfemi",
   "about": "O nama",
-  "contact":"Kontakt"
+  "contact": "Kontakt",
+  "home-title": "Dobrodošli u Svijet Parfema",
+  "home-info": "Dobrodošli u mjesto gdje se mirisi pretvaraju u priče, gdje svaki kapljica parfema nosi emocionalnu dubinu i karakter. Naša stranica je posvećena umjetnosti parfemskog stvaralaštva, putovanju kroz raznolik svijet mirisa i otkrivanju jedinstvenih aromatskih doživljaja. Zaronite s nama u čarobni svijet parfema, gdje svaka nota ima svoju priču, svaki flakon je malo remek-djelo, a svaki miris ostavlja neizbrisiv trag. Neka vas naša stranica inspirira i vodi kroz ovu čarobnu olfaktornu avanturu.",
+  "parfumes-title": "Najnoviji proizvodi"
 }

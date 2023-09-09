@@ -1,10 +1,17 @@
-import adorable from "./../assets/adorable-young-model-smiling-colorful-flowers-high-quality-photo.jpg";
+import { useTranslation } from "react-i18next";
+import Intro from "./intro";
 
 const Home = () => {
+  const { t } = useTranslation();
   return (
-    <div className="home">
-      <h1>Welcome to World Of Perfumes</h1>
-      <img src={adorable} className="home__main-img" />
+    <div>
+      <div className="home">
+        <h1>{t("home-title")}</h1>
+      </div>
+      <div className="home__intro">
+        <p className="home__intro__info">{t("home-info")}</p>
+      </div>
+      <Intro />
     </div>
   );
 };

@@ -1,12 +1,30 @@
 .home {
+  background-image: url(../assets/vintage-still-life-with-roses-ballet-shoes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%; // Dodajte širinu
+  height: 33rem; // Dodajte visinu
+  display: flex;
+  align-items: center;
+  justify-content: center;
   & h1 {
     font-family: "Passions Conflict", cursive;
-    font-size: 5rem;
+    font-size: 9rem;
     font-weight: 100;
     text-align: center;
-    background-image: url(./../../assets/girl-garden-shooted-from.jpg);
   }
   &__main-img {
     width: 50%;
+  }
+  &__intro {
+    background-color: var(--color-gray-500);
+    color: var(--color-white-400);
+    padding: 3rem;
+    &__info {
+      font-size: 1.3rem;
+      width: 60%;
+      margin: 3rem auto;
+    }
   }
 }

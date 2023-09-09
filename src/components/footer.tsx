@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div>
+    <div className="footer">
       <p></p>
       <a href="https://www.freepik.com/free-photo/half-face-young-caucasian-blonde-girl-surrounded-with-lots-purple-violet-lilac-wallpaper-spring-melody_7498735.htm?query=woman%20and%20flowers#from_view=detail_alsolike#position=1&query=woman+and+flowers">
         Image by freepic.diller
