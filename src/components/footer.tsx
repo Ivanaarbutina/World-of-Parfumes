@@ -13,7 +13,14 @@ const Footer = () => {
       <a href="https://www.freepik.com/free-photo/young-attractive-happy-woman-dancing-turning-around-by-sea-beach-sunny-summer-fashion-style_13361787.htm#page=2&query=woman%20and%20ocean&position=1&from_view=search&track=ais">
         Image by marymarkevich
       </a>{" "}
-      on Freepik
+      on Freepik Image by{" "}
+      <a href="https://pixabay.com/users/buntysmum-5497946/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2610772">
+        Beverly Buckley
+      </a>{" "}
+      from{" "}
+      <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2610772">
+        Pixabay
+      </a>
     </div>
   );
 };
