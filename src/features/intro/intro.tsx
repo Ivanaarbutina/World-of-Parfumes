@@ -1,12 +1,19 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { parfumesList } from "./intro-list";
+
 const Intro = () => {
   const { t } = useTranslation();
   return (
     <div className="parfumes">
-      <h1>{t("parfumes-title")}</h1>
-      <section className="parfumes__section">
+      <motion.h1
+        initial={{ opacity: 0 }}
+        whileInView={{ x: [100, 0], opacity: 1 }}
+        transition={{ duration: 2 }}
+      >
+        {t("parfumes-title")}
+      </motion.h1>
+      {/* <section className="parfumes__section">
         {parfumesList.map((parfume) => {
           return (
             <div key={parfume.id} className="parfumes__section__box">
@@ -29,8 +36,8 @@ const Intro = () => {
             </div>
           );
         })}
-      </section>
-      {/* <section className="grid-gallery">
+      </section> */}
+      <section className="grid-gallery">
         {parfumesList.map((parfume) => {
           return (
             <div key={parfume.id} className="gallery-item">
@@ -41,7 +48,7 @@ const Intro = () => {
             </div>
           );
         })}
-      </section> */}
+      </section>
     </div>
   );
 };

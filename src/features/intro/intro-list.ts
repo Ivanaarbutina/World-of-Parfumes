@@ -19,19 +19,19 @@ export const parfumesList: ParfumeType[] = [
   },
   {
     title: "Happiness",
-    desc: "forest-dream",
+    desc: "happiness",
     id: 2,
     img: parfume2,
   },
   {
-    title: "Shunshine",
-    desc: "forest-dream",
+    title: "Valentine's Day",
+    desc: "sunshine",
     id: 3,
     img: parfume3,
   },
   {
     title: "Mistique",
-    desc: "forest-dream",
+    desc: "mistique",
     id: 4,
     img: parfume4,
   },

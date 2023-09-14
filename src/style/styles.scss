@@ -68,5 +68,8 @@ $media-xl: 75em; //1200px
 @import "./components/intro.scss";
 @import "./components/language-switcher.scss";
 
+//features
+@import "./features/socials.scss";
+
 //utils
 @import "./utils/animations.scss";

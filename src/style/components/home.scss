@@ -10,9 +10,12 @@
   justify-content: center;
   & h1 {
     font-family: "Passions Conflict", cursive;
-    font-size: 9rem;
+    font-size: 5rem;
     font-weight: 100;
     text-align: center;
+    @media (min-width: $media-sm) {
+      font-size: 9rem;
+    }
   }
   &__main-img {
     width: 50%;
@@ -20,11 +23,17 @@
   &__intro {
     background-color: var(--color-gray-500);
     color: var(--color-white-400);
-    padding: 3rem;
+    padding: 0.3rem;
+    @media (min-width: $media-sm) {
+      padding: 3rem;
+    }
     &__info {
       font-size: 1.3rem;
-      width: 60%;
-      margin: 3rem auto;
+      width: 80%;
+      margin: 1rem auto;
+      @media (min-width: $media-sm) {
+        margin: 3rem auto;
+      }
     }
   }
 }

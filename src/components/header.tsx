@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import logo from "./../assets/icons8-parfume-96 (2).png";
+import logo from "./../assets/icons8-parfume.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {

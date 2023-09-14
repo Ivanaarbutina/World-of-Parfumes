@@ -9,7 +9,6 @@ const Layout = () => {
       <LanguageSwitcher />
       <Header />
       <Outlet />
-
       <Footer />
     </div>
   );
