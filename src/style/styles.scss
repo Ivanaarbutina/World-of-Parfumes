@@ -35,6 +35,8 @@ body {
   --color-carmine-3: #a3909b;
   --color-table-1: #f1f1f1;
   --color-table-2: #ddd;
+  --color-gold: #d4af37;
+  --color-gold-2: #a4810e;
 
   //box-shadows
   --custom-box-shadow: 1px 2px 2px hsla(219, 9%, 30%, 0.2),
@@ -64,11 +66,13 @@ $media-xl: 75em; //1200px
 //components
 @import "./components/footer.scss";
 @import "./components/header.scss";
+@import "./components/header-nav.scss";
 @import "./components/home.scss";
 @import "./components/intro.scss";
 @import "./components/language-switcher.scss";
 
 //features
+@import "./features/about.scss";
 @import "./features/socials.scss";
 
 //utils

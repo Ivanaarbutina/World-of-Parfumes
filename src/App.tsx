@@ -2,8 +2,8 @@ import { Route, Routes } from "react-router-dom";
 import "./style/styles.scss";
 import Layout from "./components/layout";
 import Home from "./features/home/home";
-import Contact from "./components/contact";
-import About from "./components/about";
+import Contact from "./features/footer/contact";
+import About from "./features/about";
 import Intro from "./features/intro/intro";
 import Socials from "./features/socials/socials";
 

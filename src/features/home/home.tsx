@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import Intro from "../intro/intro";
 import Socials from "../socials/socials";
 import { motion } from "framer-motion";
+import About from "../about";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -20,6 +21,7 @@ const Home = () => {
         <p className="home__intro__info">{t("home-info")}</p>
       </div>
       <Intro />
+      <About />
       <Socials />
     </div>
   );

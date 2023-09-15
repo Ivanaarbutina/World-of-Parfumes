@@ -1,0 +1,28 @@
+.about {
+  background-image: url(src/assets/lovely-fake-flower.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: var(--color-gray-500);
+  color: #e1dfd9;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  @media (min-width: $media-sm) {
+    padding: 2rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-align: center;
+  }
+  &__desc {
+    font-size: 1.3rem;
+    width: 90%;
+    @media (min-width: $media-sm) {
+      width: 70%;
+    }
+  }
+}
