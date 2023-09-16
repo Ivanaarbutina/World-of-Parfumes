@@ -1,25 +1,30 @@
 .home {
-  background-image: url(../assets/vintage-still-life-with-roses-ballet-shoes.jpg);
+  background-image: url(src/assets/yellow-rose.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   width: 100%; // Dodajte širinu
-  height: 33rem; // Dodajte visinu
+  height: 28rem; // Dodajte visinu
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  color: var(--color-white-400);
+  @media (min-width: $media-md) {
+    height: 33rem; // Dodajte visinu
+  }
   & h1 {
     font-family: "Passions Conflict", cursive;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 100;
     text-align: center;
-    @media (min-width: $media-sm) {
+
+    @media (min-width: $media-md) {
       font-size: 9rem;
     }
   }
-  &__main-img {
-    width: 50%;
-  }
+
   &__intro {
     background-color: var(--color-gray-500);
     color: var(--color-white-400);

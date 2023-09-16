@@ -64,7 +64,7 @@ $media-md: 48em; //768px
 $media-lg: 62em; //992px
 $media-xl: 75em; //1200px
 //components
-@import "./components/footer.scss";
+
 @import "./components/header.scss";
 @import "./components/header-nav.scss";
 @import "./components/home.scss";
@@ -73,6 +73,8 @@ $media-xl: 75em; //1200px
 
 //features
 @import "./features/about.scss";
+@import "./features/contact.scss";
+@import "./features/footer.scss";
 @import "./features/socials.scss";
 
 //utils

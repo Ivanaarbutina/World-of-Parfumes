@@ -3,27 +3,62 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5rem;
-  padding: 2rem;
 
-  &__logo {
-    width: 3.3rem;
-    margin-left: 2rem;
+  padding: 0.3rem;
+  position: fixed;
+  width: 100%;
+  @media (min-width: $media-lg) {
+    padding: 0.5rem;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    text-decoration: none;
   }
 
-  &__nav {
-    padding: 0.5rem;
-    margin-right: 2rem;
-    &__link {
-      font-size: 1rem;
-      padding: 0.5rem;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: var(--color-white-400);
-      transition: all 250ms ease-in-out;
-      &:hover {
-        color: var(--color-carmine-3);
-      }
+  &__logo {
+    width: 2rem;
+    margin-left: 1rem;
+    @media (min-width: $media-md) {
+      width: 2.5rem;
+      margin-left: 2rem;
     }
+  }
+
+  &__name {
+    font-size: 2rem;
+    color: var(--color-white-400);
+    font-family: "Passions Conflict", cursive;
+    @media (min-width: $media-md) {
+      font-size: 2.3rem;
+    }
+  }
+  &__sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+}
+.inner-header-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $media-md) {
+    flex-direction: row;
+  }
+}
+.inner-header-section.block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: var(--color-gray-500);
+  padding: 1.5rem;
+  z-index: 100;
+  @media (min-width: $media-sm) {
+    padding: 2rem;
   }
 }
