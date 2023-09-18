@@ -1,4 +1,12 @@
 .footer {
   background-color: var(--color-gray-500);
   color: var(--color-white-400);
+  padding: 2rem;
+  &__link {
+    margin-left: 3rem;
+    &__item {
+      color: var(--color-gold-2);
+      text-decoration: none;
+    }
+  }
 }

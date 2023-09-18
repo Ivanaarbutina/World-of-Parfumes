@@ -16,7 +16,6 @@ const About = () => {
         </motion.h1>
         <p className="about__desc">{t("about-us")}</p>
         <p className="about__desc">{t("about-us2")}</p>
-        <p className="about__desc">{t("about-us3")}</p>
       </div>
     </div>
   );

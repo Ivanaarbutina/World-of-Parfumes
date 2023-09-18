@@ -2,7 +2,7 @@ import { ButtonHTMLAttributes } from "react";
 
 type ButtonProps = {
   text: string;
-  color?: "blue" | "green" | "red";
+  color?: "yellow" | "green" | "red";
   size?: "lg" | "md" | "sm";
   onClick?: () => void;
 } & ButtonHTMLAttributes<HTMLButtonElement>;

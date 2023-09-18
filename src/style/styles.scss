@@ -65,6 +65,7 @@ $media-lg: 62em; //992px
 $media-xl: 75em; //1200px
 //components
 
+@import "./components/button.scss";
 @import "./components/header.scss";
 @import "./components/header-nav.scss";
 @import "./components/home.scss";

@@ -10,10 +10,10 @@ const Contact = () => {
         <p>locate a store</p>
       </section>
       <section className="contact__info">
-        <h3 className="contact__info__title">contact</h3>
+        <h3 className="contact__info__title">Contact</h3>
         <p>customerservice@wp.hr</p>
         <p>+85 (0)1 55 33 55 63</p>
-        <Button text="Contact us" className="contact__info__btn"></Button>
+        <Button text="Contact us" color="yellow"></Button>
       </section>
     </div>
   );

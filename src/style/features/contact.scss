@@ -3,6 +3,20 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #d4af37;
+  margin: 1rem 3rem;
+  padding: 1rem;
+  text-align: center;
+  &__services {
+    margin-left: 5rem;
+    &__title {
+      font-size: 1.5rem;
+    }
+  }
 
-  padding: 2rem;
+  &__info {
+    margin-right: 5rem;
+    &__title {
+      font-size: 1.5rem;
+    }
+  }
 }
