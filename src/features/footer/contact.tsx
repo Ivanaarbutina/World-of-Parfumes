@@ -2,7 +2,7 @@ import Button from "../../components/button";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <section className="contact__services">
         <h3 className="contact__services__title">Services</h3>
         <p>payment and security</p>

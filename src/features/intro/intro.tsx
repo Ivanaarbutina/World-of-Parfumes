@@ -5,7 +5,7 @@ import { parfumesList } from "./intro-list";
 const Intro = () => {
   const { t } = useTranslation();
   return (
-    <div className="parfumes">
+    <div className="parfumes" id="intro">
       <motion.h1
         initial={{ opacity: 0 }}
         whileInView={{ x: [50, 0], opacity: 1 }}

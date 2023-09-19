@@ -8,7 +8,7 @@ type LinkType = {
 };
 const headerLinks: LinkType[] = [
   {
-    path: "#parfumes",
+    path: "/products",
     label: "parfumes",
   },
   {
@@ -39,15 +39,15 @@ const Header = () => {
       }
     }
   };
-  const scrollToContact = function (
+  const scrollToTitle = function (
     e: React.MouseEvent<HTMLElement, MouseEvent>
   ) {
     e.preventDefault();
-    const contact = document.getElementById("contact") as HTMLElement | null;
+    const title = document.getElementById("title") as HTMLElement | null;
 
-    if (contact) {
+    if (title) {
       window.scrollTo({
-        top: contact.offsetTop,
+        top: title.offsetTop,
         behavior: "smooth",
       });
     }
@@ -65,10 +65,10 @@ const Header = () => {
       <header className="header" id="header">
         <div>
           <Link
-            to="#footer"
+            to="#title"
             className="header__box"
             onClick={(e) => {
-              scrollToContact(e);
+              scrollToTitle(e);
             }}
           >
             <img className="header__logo" src={logo} alt="Header logo" />
