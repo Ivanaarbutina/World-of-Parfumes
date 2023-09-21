@@ -2,19 +2,22 @@ import { useTranslation } from "react-i18next";
 import logo from "./../assets/icons8-perfume-50.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import shoppingCart from "./../assets/shoppingcart.png";
+import LanguageSwitcher from "./LanguageSwitcher";
+
 type LinkType = {
   label: string;
   path: string;
 };
 const headerLinks: LinkType[] = [
-  {
-    path: "/products",
-    label: "parfumes",
-  },
-  {
-    path: "#about",
-    label: "about",
-  },
+  // {
+  //   path: "/products",
+  //   label: "shop",
+  // },
+  // {
+  //   path: "",
+  //   label: "home",
+  // },
   {
     path: "#contact",
     label: "contact",
@@ -79,6 +82,16 @@ const Header = () => {
           className={`inner-header-section ${showHeaderSection ? "block" : ""}`}
         >
           <nav className={`nav-menu ${showHeaderSection ? "show" : ""}`}>
+            <Link to="/cart">
+              <img src={shoppingCart} />
+            </Link>
+            <Link to="/products" className={"header__nav__link"}>
+              {" "}
+              Shop
+            </Link>
+            <Link to="/" className={"header__nav__link"}>
+              Home
+            </Link>
             {headerLinks.map((link: LinkType) => {
               return (
                 <a
@@ -94,6 +107,7 @@ const Header = () => {
                 </a>
               );
             })}
+            <LanguageSwitcher />
           </nav>
         </section>
 

@@ -15,16 +15,20 @@
   }
 
   &__container {
-    width: 20rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     border: 1px solid #d4af37;
     padding: 1rem;
+
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      box-shadow: var(--light-box-shadow);
+    }
   }
   &__img {
-    width: 15rem;
-    height: 15rem;
+    width: 12rem;
+    border-radius: var(--border-rounded);
   }
 
   &__star {

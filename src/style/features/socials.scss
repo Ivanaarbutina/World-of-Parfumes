@@ -1,7 +1,11 @@
 .socials {
+  background-image: url(src/assets/5226644.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   background-color: var(--color-white-400);
   display: flex;
-  padding: 0.5rem;
+  padding: 2rem;
   flex-direction: column;
 
   @media (min-width: $media-sm) {

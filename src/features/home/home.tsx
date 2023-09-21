@@ -3,7 +3,6 @@ import Intro from "../intro/intro";
 import Socials from "../socials/socials";
 import { motion } from "framer-motion";
 import About from "../about";
-import ShopProducts from "../shopping/shopping-products";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -25,7 +24,6 @@ const Home = () => {
       <Intro />
       <About />
       <Socials />
-      <ShopProducts />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import parfume1 from "./../../assets/black-fragrance.jpg";
-import parfume2 from "./../../assets/bottle-designed.jpg";
+import parfume2 from "./../../assets/gold-cap-parfume.jpg";
 import parfume3 from "./../../assets/clear-glass.jpg";
 import parfume4 from "./../../assets/front-view-purple-silver-bottle-designed-beautiful-isolated-white-desk.jpg";
 

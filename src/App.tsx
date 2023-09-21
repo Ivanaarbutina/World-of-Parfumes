@@ -7,6 +7,7 @@ import About from "./features/about";
 import Intro from "./features/intro/intro";
 import Socials from "./features/socials/socials";
 import ShopProducts from "./features/shopping/shopping-products";
+import { Cart } from "./features/cart/cart";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/intro" element={<Intro />} />
           <Route path="/socials" element={<Socials />} />
           <Route path="/products" element={<ShopProducts />} />
+          <Route path="/cart" element={<Cart />} />
         </Route>
       </Routes>
     </>
