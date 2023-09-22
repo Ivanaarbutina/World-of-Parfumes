@@ -1,8 +1,8 @@
-import facebook from "./../../assets/icons/icons8-facebook.svg";
-import instagram from "./../../assets/icons/icons8-instagram.svg";
-import pinterest from "./../../assets/icons/icons8-pinterest.svg";
-import twitter from "./../../assets/icons/icons8-twitter-circled.svg";
-import tiktok from "./../../assets/icons/icons8-tiktok.svg";
+import facebook from "./../../../assets/icons/icons8-facebook.svg";
+import instagram from "./../../../assets/icons/icons8-instagram.svg";
+import pinterest from "./../../../assets/icons/icons8-pinterest.svg";
+import twitter from "./../../../assets/icons/icons8-twitter-circled.svg";
+import tiktok from "./../../../assets/icons/icons8-tiktok.svg";
 
 export type IconProps = {
   img: string;

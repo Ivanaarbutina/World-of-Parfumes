@@ -5,7 +5,7 @@ const About = () => {
   const { t } = useTranslation();
   return (
     <div className="about__wrapper" id="about">
-      <div className="about">
+      <div className="about" id="about">
         <motion.h1
           initial={{ opacity: 0 }}
           whileInView={{ y: [-100, 0], opacity: 1 }}

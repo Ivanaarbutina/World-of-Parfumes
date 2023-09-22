@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import shoppingCart from "./../assets/shoppingcart.png";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { useShoppingCart } from "../contex/shop-context";
 
 type LinkType = {
   label: string;
@@ -19,14 +20,19 @@ const headerLinks: LinkType[] = [
   //   label: "home",
   // },
   {
-    path: "#contact",
-    label: "contact",
+    path: "/",
+    label: "home",
+  },
+  {
+    path: "/store",
+    label: "shop",
   },
 ];
 
 const Header = () => {
   const [showHeaderSection, setShowHeaderSection] = useState(false);
   const { t } = useTranslation();
+  const { openCart, cartQuantity } = useShoppingCart();
 
   // Smooth scrolling navigation
   const scrollToHref = function (e: React.MouseEvent<HTMLElement, MouseEvent>) {
@@ -67,39 +73,34 @@ const Header = () => {
     <div>
       <header className="header" id="header">
         <div>
-          <Link
-            to="#title"
-            className="header__box"
+          <a
+            href="#about"
             onClick={(e) => {
-              scrollToTitle(e);
+              scrollToHref(e);
+              closeNavMenu();
             }}
+            className="header__box"
           >
             <img className="header__logo" src={logo} alt="Header logo" />
             <span className="header__name">WP</span>
-          </Link>
+          </a>
         </div>
         <section
           className={`inner-header-section ${showHeaderSection ? "block" : ""}`}
         >
           <nav className={`nav-menu ${showHeaderSection ? "show" : ""}`}>
-            <Link to="/cart">
+            <Link to="/cart" onClick={openCart} className={"header__nav__card"}>
               <img src={shoppingCart} />
+              <div className="header__card__number">{cartQuantity}</div>
             </Link>
-            <Link to="/products" className={"header__nav__link"}>
-              {" "}
-              Shop
-            </Link>
-            <Link to="/" className={"header__nav__link"}>
-              Home
-            </Link>
+
             {headerLinks.map((link: LinkType) => {
               return (
                 <a
                   className={"header__nav__link"}
                   key={link.path}
                   href={link.path}
-                  onClick={(e) => {
-                    scrollToHref(e); // Poziv scrollToHref funkcije kada korisnik klikne na link
+                  onClick={() => {
                     closeNavMenu(); // Zatvaranje menija nakon klika na link
                   }}
                 >
@@ -107,6 +108,17 @@ const Header = () => {
                 </a>
               );
             })}
+            <a
+              href="#contact"
+              onClick={(e) => {
+                scrollToHref(e);
+                closeNavMenu();
+              }}
+              className={"header__nav__link"}
+            >
+              contact
+            </a>
+
             <LanguageSwitcher />
           </nav>
         </section>

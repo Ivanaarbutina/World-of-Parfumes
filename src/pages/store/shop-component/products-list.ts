@@ -1,17 +1,17 @@
-import blueGold from "./../../assets/bottle-perfume-10.jpg";
-import black from "./../../assets/bottle-perfume-1.jpg";
-import purple from "./../../assets/bottle-perfume-2.jpg";
-import romantic from "./../../assets/bottle-perfume-3.jpg";
-import clear from "./../../assets/bottle-perfume-4.jpg";
-import purpleGold from "./../../assets/bottle-perfume-5.jpg";
-import flower from "./../../assets/bottle-perfume-6.jpg";
-import gold from "./../../assets/bottle-perfume-7.jpg";
-import green from "./../../assets/bottle-perfume-9.jpg";
-import amor from "./../../assets/bottle-perfume-8.jpg";
-import beauty from "./../../assets/bottle-perfume-11.jpg";
-import glam from "./../../assets/bottle-12.jpg";
-import star from "./../../assets/icons8-star-48.png";
-import halfStar from "./../../assets/icons8-star-half-empty-48.png";
+import blueGold from "./../../../assets/bottle-perfume-10.jpg";
+import black from "./../../../assets/bottle-perfume-1.jpg";
+import purple from "./../../../assets/bottle-perfume-2.jpg";
+import romantic from "./../../../assets/bottle-perfume-3.jpg";
+import clear from "./../../../assets/bottle-perfume-4.jpg";
+import purpleGold from "./../../../assets/bottle-perfume-5.jpg";
+import flower from "./../../../assets/bottle-perfume-6.jpg";
+import gold from "./../../../assets/bottle-perfume-7.jpg";
+import green from "./../../../assets/bottle-perfume-9.jpg";
+import amor from "./../../../assets/bottle-perfume-8.jpg";
+import beauty from "./../../../assets/bottle-perfume-11.jpg";
+import glam from "./../../../assets/bottle-12.jpg";
+import star from "./../../../assets/icons8-star-48.png";
+import halfStar from "./../../../assets/icons8-star-half-empty-48.png";
 
 export type ProductsType = {
   img: string;

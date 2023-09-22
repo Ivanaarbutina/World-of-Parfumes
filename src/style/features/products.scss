@@ -26,8 +26,9 @@
       box-shadow: var(--light-box-shadow);
     }
   }
-  &__img {
+  &__picture img {
     width: 12rem;
+
     border-radius: var(--border-rounded);
   }
 
