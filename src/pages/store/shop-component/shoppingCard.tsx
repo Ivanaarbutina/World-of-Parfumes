@@ -2,6 +2,7 @@ import { useShoppingCart } from "../../../contex/shop-context";
 import { formatCurrency } from "../../../utiles/formatCurrency";
 import { CartItem } from "./cartItem";
 import { productsList } from "./products-list";
+import { useNavigate } from "react-router-dom";
 
 type ShoppingCartProps = {
   isOpen: boolean;
@@ -9,12 +10,24 @@ type ShoppingCartProps = {
 
 export function ShoppingCart({ isOpen }: ShoppingCartProps) {
   const { closeCart, cartItems } = useShoppingCart();
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    // Navigirajte na željenu rutu
+    navigate("/");
+  };
 
   return (
     <div className={`shopping-cart${isOpen ? " open" : ""}`}>
       <div className="shopping-cart-header">
         <h2>Cart</h2>
-        <button className="close-button" onClick={closeCart}>
+        <button
+          className="close-button"
+          onClick={() => {
+            handleNavigate();
+            closeCart();
+          }}
+        >
           Close
         </button>
       </div>

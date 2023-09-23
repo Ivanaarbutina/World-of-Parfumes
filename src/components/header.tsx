@@ -11,14 +11,6 @@ type LinkType = {
   path: string;
 };
 const headerLinks: LinkType[] = [
-  // {
-  //   path: "/products",
-  //   label: "shop",
-  // },
-  // {
-  //   path: "",
-  //   label: "home",
-  // },
   {
     path: "/",
     label: "home",
@@ -46,19 +38,6 @@ const Header = () => {
           behavior: "smooth",
         });
       }
-    }
-  };
-  const scrollToTitle = function (
-    e: React.MouseEvent<HTMLElement, MouseEvent>
-  ) {
-    e.preventDefault();
-    const title = document.getElementById("title") as HTMLElement | null;
-
-    if (title) {
-      window.scrollTo({
-        top: title.offsetTop,
-        behavior: "smooth",
-      });
     }
   };
 

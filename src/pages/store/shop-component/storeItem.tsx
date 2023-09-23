@@ -38,19 +38,37 @@ const StoreItem = ({ id, name, type, icon, price, img }: StoreItemProps) => {
         <span className="product__price">{price} €</span>
         <div>
           {quantity === 0 ? (
-            <button onClick={() => increaseCartQuantity(id)}>
+            <button
+              onClick={() => increaseCartQuantity(id)}
+              className="btn--yellow2 btn--md"
+            >
               + Add To Cart
             </button>
           ) : (
             <div>
-              <div>
-                <button onClick={() => decreaseCartQuantity(id)}>-</button>
+              <div className="btn__section">
+                <button
+                  className="btn__quantity"
+                  onClick={() => decreaseCartQuantity(id)}
+                >
+                  -
+                </button>
                 <div>
                   <span>{quantity}</span> in cart
                 </div>
-                <button onClick={() => increaseCartQuantity(id)}>+</button>
+                <button
+                  className="btn__quantity"
+                  onClick={() => increaseCartQuantity(id)}
+                >
+                  +
+                </button>
               </div>
-              <button onClick={() => removeFromCart(id)}>Remove</button>
+              <button
+                className="btn--yellow btn--sm"
+                onClick={() => removeFromCart(id)}
+              >
+                Remove
+              </button>
             </div>
           )}
         </div>

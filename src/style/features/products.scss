@@ -14,6 +14,18 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
+  &__shop__title {
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 3rem;
+  }
+  &__shop__desc {
+    max-width: 60%;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
   &__container {
     display: flex;
     align-items: center;
@@ -28,7 +40,6 @@
   }
   &__picture img {
     width: 12rem;
-
     border-radius: var(--border-rounded);
   }
 
@@ -39,5 +50,11 @@
     &__img {
       width: 1rem;
     }
+  }
+
+  &__price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
   }
 }
