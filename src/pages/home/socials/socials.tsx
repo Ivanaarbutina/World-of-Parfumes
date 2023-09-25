@@ -1,17 +1,19 @@
 import Button from "../../../components/button";
 import { iconsList } from "./socials-list";
+import { useTranslation } from "react-i18next";
 
 const Socials = () => {
+  const { t } = useTranslation();
   return (
     <div className="socials">
       <div className="socials__link">
         <Button
           size="md"
-          color="red"
-          text="Subscribe"
+          color="black"
+          text={t("subscribe")}
           className="socials__btn"
         ></Button>
-        <span>to the newsletter</span>
+        <span>{t("newsletter")}</span>
       </div>
       <div className="socials__icon__wrapper">
         {iconsList.map((icon) => {

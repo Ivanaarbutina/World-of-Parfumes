@@ -20,15 +20,13 @@ export function CartItem({ id, quantity }: CartItemProps) {
         alt={item.name}
       />
       <div className="cart-item-details">
-        <div className="cart-item-name">
-          {item.name}{" "}
-          {quantity > 1 && (
-            <span className="text-muted cart-item-quantity">x{quantity}</span>
-          )}
-        </div>
-        <div className="cart-item-price text-muted">
-          {formatCurrency(item.price)}
-        </div>
+        <div className="cart-item-name">{item.name}</div>
+        <div className="cart-item-price ">{formatCurrency(item.price)}</div>
+        {quantity > 0 && (
+          <span className="cart-item-quantity">
+            x <span className="cart-item-quantity1">{quantity}</span>
+          </span>
+        )}
       </div>
       <div className="cart-item-total">
         {formatCurrency(item.price * quantity)}
