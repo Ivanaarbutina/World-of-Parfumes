@@ -16,7 +16,7 @@ export function CartItem({ id, quantity }: CartItemProps) {
     <div className="cart-item">
       <img
         src={item.img}
-        style={{ width: "125px", height: "75px", objectFit: "cover" }}
+        // style={{ width: "125px", height: "75px", objectFit: "cover" }}
         alt={item.name}
       />
       <div className="cart-item-details">
@@ -24,7 +24,7 @@ export function CartItem({ id, quantity }: CartItemProps) {
         <div className="cart-item-price ">{formatCurrency(item.price)}</div>
         {quantity > 0 && (
           <span className="cart-item-quantity">
-            x <span className="cart-item-quantity1">{quantity}</span>
+            x <span className="cart-item-quantity1">{quantity} =</span>
           </span>
         )}
       </div>

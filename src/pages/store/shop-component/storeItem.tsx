@@ -45,13 +45,13 @@ const StoreItem = ({ id, name, type, icon, price, img }: StoreItemProps) => {
               + Add To Cart
             </button>
           ) : (
-            <div>
+            <div className="btn__section__wrapper">
               <div className="btn__section">
                 <button
                   className="btn__quantity"
                   onClick={() => decreaseCartQuantity(id)}
                 >
-                  -
+                  &#8722;
                 </button>
                 <div>
                   <span>{quantity}</span> in cart
@@ -60,7 +60,7 @@ const StoreItem = ({ id, name, type, icon, price, img }: StoreItemProps) => {
                   className="btn__quantity"
                   onClick={() => increaseCartQuantity(id)}
                 >
-                  +
+                  &#43;
                 </button>
               </div>
               <button
