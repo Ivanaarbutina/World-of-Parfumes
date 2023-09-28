@@ -18,6 +18,7 @@ export type ProductsType = {
   name: string;
   type: string;
   icon: string[];
+  desc: string;
   price: number;
   id: number;
 };
@@ -28,6 +29,7 @@ export const productsList: ProductsType[] = [
     name: "Forest dream",
     type: "eau de toilette for women - 50ml",
     icon: [star, star, star, star, star],
+    desc: "Ovaj parfem nadahnut je mirisom 1 Million (izdanje za 2020.), novom verzijom originalnog parfema 1 Million. Ova verzija usuđuje se pomaknuti granice i poigrati se osjetilima svojom dualnošću slanih nota i suncem okupane kože. Miris s toplinom yantre za intenzivnu senzualnost – poput kože dodirnute suncem – mami poput zlata. Kao amblem uklesan u metal, ovaj je miris namijenjen onima koji se usuđuju istaknuti među milijunima. Budite sigurni u svoj stil. Nemojte se bojati biti drugačiji. Budite dovoljno hrabri da budete jedinstveni. ",
     price: 69,
     id: 1,
   },
@@ -36,6 +38,7 @@ export const productsList: ProductsType[] = [
     name: "Magic night",
     type: "eau de parfum for women - 75ml",
     icon: [star, star, star, star, star],
+    desc: "Ovaj parfem nadahnut je mirisom 1 Million (izdanje za 2020.), novom verzijom originalnog parfema 1 Million. Ova verzija usuđuje se pomaknuti granice i poigrati se osjetilima svojom dualnošću slanih nota i suncem okupane kože. Miris s toplinom yantre za intenzivnu senzualnost – poput kože dodirnute suncem – mami poput zlata. Kao amblem uklesan u metal, ovaj je miris namijenjen onima koji se usuđuju istaknuti među milijunima. Budite sigurni u svoj stil. Nemojte se bojati biti drugačiji. Budite dovoljno hrabri da budete jedinstveni. ",
     price: 79,
     id: 2,
   },
@@ -44,6 +47,7 @@ export const productsList: ProductsType[] = [
     name: "Happiness",
     type: "eau de toilette for women - 50ml",
     icon: [star, star, star, star, star],
+    desc: "Ovaj parfem nadahnut je mirisom 1 Million (izdanje za 2020.), novom verzijom originalnog parfema 1 Million. Ova verzija usuđuje se pomaknuti granice i poigrati se osjetilima svojom dualnošću slanih nota i suncem okupane kože. Miris s toplinom yantre za intenzivnu senzualnost – poput kože dodirnute suncem – mami poput zlata. Kao amblem uklesan u metal, ovaj je miris namijenjen onima koji se usuđuju istaknuti među milijunima. Budite sigurni u svoj stil. Nemojte se bojati biti drugačiji. Budite dovoljno hrabri da budete jedinstveni. ",
     price: 55,
     id: 3,
   },
@@ -52,6 +56,7 @@ export const productsList: ProductsType[] = [
     name: "Buterfly",
     type: "eau de parfum for women - 75ml",
     icon: [star, star, star, star, halfStar],
+    desc: "Ovaj parfem nadahnut je mirisom 1 Million (izdanje za 2020.), novom verzijom originalnog parfema 1 Million. Ova verzija usuđuje se pomaknuti granice i poigrati se osjetilima svojom dualnošću slanih nota i suncem okupane kože. Miris s toplinom yantre za intenzivnu senzualnost – poput kože dodirnute suncem – mami poput zlata. Kao amblem uklesan u metal, ovaj je miris namijenjen onima koji se usuđuju istaknuti među milijunima. Budite sigurni u svoj stil. Nemojte se bojati biti drugačiji. Budite dovoljno hrabri da budete jedinstveni. ",
     price: 80,
     id: 4,
   },
@@ -60,6 +65,7 @@ export const productsList: ProductsType[] = [
     name: "Simple music",
     type: "eau de parfum for women - 75ml",
     icon: [star, star, star, star, halfStar],
+    desc: "Ovaj parfem nadahnut je mirisom 1 Million (izdanje za 2020.), novom verzijom originalnog parfema 1 Million. Ova verzija usuđuje se pomaknuti granice i poigrati se osjetilima svojom dualnošću slanih nota i suncem okupane kože. Miris s toplinom yantre za intenzivnu senzualnost – poput kože dodirnute suncem – mami poput zlata. Kao amblem uklesan u metal, ovaj je miris namijenjen onima koji se usuđuju istaknuti među milijunima. Budite sigurni u svoj stil. Nemojte se bojati biti drugačiji. Budite dovoljno hrabri da budete jedinstveni. ",
     price: 82,
     id: 5,
   },
@@ -68,6 +74,7 @@ export const productsList: ProductsType[] = [
     name: "Poison",
     type: "eau de parfum for women - 100ml",
     icon: [star, star, star, star, star],
+    desc: "Ovaj parfem nadahnut je mirisom 1 Million (izdanje za 2020.), novom verzijom originalnog parfema 1 Million. Ova verzija usuđuje se pomaknuti granice i poigrati se osjetilima svojom dualnošću slanih nota i suncem okupane kože. Miris s toplinom yantre za intenzivnu senzualnost – poput kože dodirnute suncem – mami poput zlata. Kao amblem uklesan u metal, ovaj je miris namijenjen onima koji se usuđuju istaknuti među milijunima. Budite sigurni u svoj stil. Nemojte se bojati biti drugačiji. Budite dovoljno hrabri da budete jedinstveni. ",
     price: 92,
     id: 6,
   },
@@ -76,6 +83,7 @@ export const productsList: ProductsType[] = [
     name: "Summer",
     type: "eau de parfum for women - 100ml",
     icon: [star, star, star, star, star],
+    desc: "Ovaj parfem nadahnut je mirisom 1 Million (izdanje za 2020.), novom verzijom originalnog parfema 1 Million. Ova verzija usuđuje se pomaknuti granice i poigrati se osjetilima svojom dualnošću slanih nota i suncem okupane kože. Miris s toplinom yantre za intenzivnu senzualnost – poput kože dodirnute suncem – mami poput zlata. Kao amblem uklesan u metal, ovaj je miris namijenjen onima koji se usuđuju istaknuti među milijunima. Budite sigurni u svoj stil. Nemojte se bojati biti drugačiji. Budite dovoljno hrabri da budete jedinstveni. ",
     price: 95,
     id: 7,
   },
@@ -84,6 +92,7 @@ export const productsList: ProductsType[] = [
     name: "Smaragd",
     type: "eau de parfum for women - 50ml",
     icon: [star, star, star, star, halfStar],
+    desc: "Ovaj parfem nadahnut je mirisom 1 Million (izdanje za 2020.), novom verzijom originalnog parfema 1 Million. Ova verzija usuđuje se pomaknuti granice i poigrati se osjetilima svojom dualnošću slanih nota i suncem okupane kože. Miris s toplinom yantre za intenzivnu senzualnost – poput kože dodirnute suncem – mami poput zlata. Kao amblem uklesan u metal, ovaj je miris namijenjen onima koji se usuđuju istaknuti među milijunima. Budite sigurni u svoj stil. Nemojte se bojati biti drugačiji. Budite dovoljno hrabri da budete jedinstveni. ",
     price: 73,
     id: 8,
   },
@@ -92,6 +101,7 @@ export const productsList: ProductsType[] = [
     name: "Golden girl",
     type: "eau de parfum for women - 50ml",
     icon: [star, star, star, star, star],
+    desc: "Ovaj parfem nadahnut je mirisom 1 Million (izdanje za 2020.), novom verzijom originalnog parfema 1 Million. Ova verzija usuđuje se pomaknuti granice i poigrati se osjetilima svojom dualnošću slanih nota i suncem okupane kože. Miris s toplinom yantre za intenzivnu senzualnost – poput kože dodirnute suncem – mami poput zlata. Kao amblem uklesan u metal, ovaj je miris namijenjen onima koji se usuđuju istaknuti među milijunima. Budite sigurni u svoj stil. Nemojte se bojati biti drugačiji. Budite dovoljno hrabri da budete jedinstveni. ",
     price: 73,
     id: 9,
   },
@@ -100,6 +110,7 @@ export const productsList: ProductsType[] = [
     name: "Amor",
     type: "eau de toilette for women - 50ml",
     icon: [star, star, star, star, halfStar],
+    desc: "Ovaj parfem nadahnut je mirisom 1 Million (izdanje za 2020.), novom verzijom originalnog parfema 1 Million. Ova verzija usuđuje se pomaknuti granice i poigrati se osjetilima svojom dualnošću slanih nota i suncem okupane kože. Miris s toplinom yantre za intenzivnu senzualnost – poput kože dodirnute suncem – mami poput zlata. Kao amblem uklesan u metal, ovaj je miris namijenjen onima koji se usuđuju istaknuti među milijunima. Budite sigurni u svoj stil. Nemojte se bojati biti drugačiji. Budite dovoljno hrabri da budete jedinstveni. ",
     price: 63,
     id: 10,
   },
@@ -108,6 +119,7 @@ export const productsList: ProductsType[] = [
     name: "Beauty Queen",
     type: "eau de parfum for women - 50ml",
     icon: [star, star, star, star, star],
+    desc: "Ovaj parfem nadahnut je mirisom 1 Million (izdanje za 2020.), novom verzijom originalnog parfema 1 Million. Ova verzija usuđuje se pomaknuti granice i poigrati se osjetilima svojom dualnošću slanih nota i suncem okupane kože. Miris s toplinom yantre za intenzivnu senzualnost – poput kože dodirnute suncem – mami poput zlata. Kao amblem uklesan u metal, ovaj je miris namijenjen onima koji se usuđuju istaknuti među milijunima. Budite sigurni u svoj stil. Nemojte se bojati biti drugačiji. Budite dovoljno hrabri da budete jedinstveni. ",
     price: 78,
     id: 11,
   },
@@ -116,6 +128,7 @@ export const productsList: ProductsType[] = [
     name: "Glamurous",
     type: "eau de parfum for women - 50ml",
     icon: [star, star, star, star, star],
+    desc: "Ovaj parfem nadahnut je mirisom 1 Million (izdanje za 2020.), novom verzijom originalnog parfema 1 Million. Ova verzija usuđuje se pomaknuti granice i poigrati se osjetilima svojom dualnošću slanih nota i suncem okupane kože. Miris s toplinom yantre za intenzivnu senzualnost – poput kože dodirnute suncem – mami poput zlata. Kao amblem uklesan u metal, ovaj je miris namijenjen onima koji se usuđuju istaknuti među milijunima. Budite sigurni u svoj stil. Nemojte se bojati biti drugačiji. Budite dovoljno hrabri da budete jedinstveni. ",
     price: 75,
     id: 12,
   },

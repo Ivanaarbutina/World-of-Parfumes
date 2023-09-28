@@ -8,6 +8,7 @@
   text-align: center;
   &__services {
     margin-left: 5rem;
+    cursor: pointer;
     &__title {
       font-size: 1.5rem;
     }
@@ -15,6 +16,7 @@
 
   &__info {
     margin-right: 5rem;
+    cursor: pointer;
     &__title {
       font-size: 1.5rem;
     }

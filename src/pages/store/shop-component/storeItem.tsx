@@ -1,4 +1,5 @@
 import { useShoppingCart } from "../../../contex/shop-context";
+import { useState } from "react";
 
 type StoreItemProps = {
   img: string;
@@ -7,8 +8,18 @@ type StoreItemProps = {
   icon: string[];
   price: number;
   id: number;
+  openModal: () => void;
 };
-const StoreItem = ({ id, name, type, icon, price, img }: StoreItemProps) => {
+const StoreItem = ({
+  id,
+  name,
+  type,
+  icon,
+  price,
+  img,
+  openModal,
+}: StoreItemProps) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const {
     getItemQuantity,
     increaseCartQuantity,
@@ -16,6 +27,7 @@ const StoreItem = ({ id, name, type, icon, price, img }: StoreItemProps) => {
     removeFromCart,
   } = useShoppingCart();
   const quantity = getItemQuantity(id);
+
   return (
     <div>
       <div className="product__container" key={id} id="products">
@@ -72,6 +84,7 @@ const StoreItem = ({ id, name, type, icon, price, img }: StoreItemProps) => {
             </div>
           )}
         </div>
+        <button onClick={() => openModal()}>Show details</button>
       </div>
     </div>
   );
