@@ -68,7 +68,7 @@ const Header = () => {
           className={`inner-header-section ${showHeaderSection ? "block" : ""}`}
         >
           <nav className={`nav-menu ${showHeaderSection ? "show" : ""}`}>
-            <Link to="/cart" onClick={openCart} className={"header__nav__card"}>
+            <Link to="" onClick={openCart} className={"header__nav__card"}>
               <img src={shoppingCart} />
               <div className="header__card__number">{cartQuantity}</div>
             </Link>

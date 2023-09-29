@@ -10,40 +10,45 @@
   align-items: center;
   z-index: 1000; /* Postavite z-index tako da se modal pojavi iznad ostalog sadržaja */
 
-  &-header {
+  &__header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
   }
-  &-img {
-    width: 6rem;
+  &__img {
+    width: 10rem;
+  }
+
+  &__close {
+    width: 1.3rem;
+    &:hover {
+      background-color: var(--color-gold);
+      border: 1px solid var(--color-gold);
+    }
+  }
+  &__body {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 250px; /* Prilagodite maksimalnu širinu po potrebi */
+    @media (min-width: $media-sm) {
+      max-width: 600px;
+      padding: 20px;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  &__stars img {
+    width: 1rem;
+  }
+  &__description {
+    font-size: 1.1rem;
+  }
+  &__price {
+    font-size: 2rem;
+    font-weight: 700;
   }
 }
-
-.modal-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  max-width: 600px; /* Prilagodite maksimalnu širinu po potrebi */
-}
-
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 24px;
-  color: #888;
-}
-
-.modal-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.modal-content p {
-  font-size: 16px;
-}
-
-/* Dodajte ostale stilizacije prema potrebi */

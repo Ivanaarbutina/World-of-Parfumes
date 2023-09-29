@@ -1,22 +1,31 @@
 .contact {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   border-bottom: 1px solid #d4af37;
-  margin: 1rem 3rem;
-  padding: 1rem;
+  padding: 0.3rem;
   text-align: center;
+  @media (min-width: $media-sm) {
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 1rem 3rem;
+    padding: 1rem;
+  }
   &__services {
-    margin-left: 5rem;
     cursor: pointer;
+    @media (min-width: $media-sm) {
+      margin-left: 5rem;
+    }
     &__title {
       font-size: 1.5rem;
     }
   }
 
   &__info {
-    margin-right: 5rem;
     cursor: pointer;
+    @media (min-width: $media-sm) {
+      margin-right: 5rem;
+    }
     &__title {
       font-size: 1.5rem;
     }

@@ -14,11 +14,7 @@ export function CartItem({ id, quantity }: CartItemProps) {
 
   return (
     <div className="cart-item">
-      <img
-        src={item.img}
-        // style={{ width: "125px", height: "75px", objectFit: "cover" }}
-        alt={item.name}
-      />
+      <img src={item.img} alt={item.name} />
       <div className="cart-item-details">
         <div className="cart-item-name">{item.name}</div>
         <div className="cart-item-price ">{formatCurrency(item.price)}</div>

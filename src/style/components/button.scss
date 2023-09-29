@@ -4,6 +4,7 @@
   transition: all 250ms ease-in-out;
   text-transform: uppercase;
   font-weight: 700;
+
   @media (min-width: $media-sm) {
     font-size: 1rem;
     padding: 0.6rem 1.6rem;
@@ -12,6 +13,7 @@
     border: 1px solid var(--color-gold);
     background-color: transparent;
     color: var(--color-gold);
+    transition: all 500ms ease-in-out;
     &:hover {
       border: 1px solid var(--color-gray-500);
       background-color: var(--color-gold);
@@ -24,6 +26,7 @@
     color: var(--color-gray-500);
     font-weight: 700;
     font-size: 1rem;
+    transition: all 500ms ease-in-out;
     &:hover {
       border: none;
       background-color: var(--color-gray-500);
@@ -36,10 +39,25 @@
     color: var(--color-gray-500);
     font-weight: 700;
     font-size: 1rem;
+    transition: all 500ms ease-in-out;
     &:hover {
       border: 1px solid var(--color-gold);
       background-color: var(--color-gold);
       color: var(--color-gray-500);
+    }
+  }
+  &--transparent {
+    margin-top: 0.5rem;
+    border: none;
+    background-color: transparent;
+    color: var(--color-gray-500);
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 500ms ease-in-out;
+    &:hover {
+      border-bottom: 1px solid var(--color-gold);
+      color: var(--color-gold);
     }
   }
   &--lg {

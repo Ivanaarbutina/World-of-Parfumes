@@ -1,6 +1,5 @@
 .parfumes {
   margin: 0;
-
   background-color: var(--color-white-400);
 
   & h1 {
@@ -10,7 +9,6 @@
     font-weight: 100;
     text-align: center;
     margin: 0;
-
     @media (min-width: $media-md) {
       font-size: 5rem;
     }
@@ -44,8 +42,8 @@
       background-position: center;
       background-image: url(../assets/blue-cap-gold-top.jpg);
       @media (min-width: $media-md) {
-        grid-row: 1/2; /* Prilagodite broj redova za srednje ekrane */
-        grid-column: 1/2; /* Prilagodite broj kolona za srednje ekrane */
+        grid-row: 1/2;
+        grid-column: 1/2;
       }
     }
     &:nth-child(2) {
@@ -54,7 +52,7 @@
       background-image: url(src/assets/luxurious-perfume-bottle-adds-elegance-domestic-decor-generative-ai.jpg);
       @media (min-width: $media-md) {
         grid-row: 1/2;
-        grid-column: 2/4; /* Prilagodite broj kolona za srednje ekrane */
+        grid-column: 2/4;
       }
     }
     &:nth-child(3) {
