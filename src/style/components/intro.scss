@@ -25,16 +25,27 @@
       grid-template-rows: repeat(2, 70vh);
       gap: 2.4rem;
     }
+    @media (min-width: $media-lg) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 60vh);
+      gap: 2.4rem;
+      padding: 2rem;
+      margin: 1rem;
+    }
   }
 
   .gallery-item {
     font-family: "Cormorant Garamond", serif;
-    padding: 1rem;
+    padding: 0.5rem;
     overflow: hidden;
     position: relative;
     background-size: cover;
     background-position: center;
     color: aliceblue;
+
+    @media (min-width: $media-sm) {
+      padding: 1rem;
+    }
     &:nth-child(1) {
       grid-row: 1;
       grid-column: 1;
@@ -75,11 +86,15 @@
     }
   }
   .img-description-heading {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+    @media (min-width: $media-md) {
+      font-size: 2rem;
+      margin-bottom: 1.6rem;
+    }
     @media (min-width: $media-xl) {
       font-size: 3rem;
-      margin-bottom: 1.6rem;
+      margin-bottom: 1.9rem;
     }
   }
   .img-description-heading,
@@ -88,15 +103,18 @@
   }
   .img-description {
     padding: 1rem 1.3rem 4.5rem 1.3rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     background-image: linear-gradient(
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.5) 70%,
       rgba(0, 0, 0, 0)
     );
+    @media (min-width: $media-md) {
+      font-size: 1.2rem;
+    }
 
-    @media (min-width: $media-lg) {
-      font-size: 1.1rem;
+    @media (min-width: $media-xl) {
+      font-size: 1.3rem;
       padding: 1.5rem 3.2rem 6.4rem 3.2rem;
     }
   }

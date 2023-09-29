@@ -29,7 +29,7 @@ const ShopModal: React.FC<ShopModalProps> = ({
         </div>
         <div className="">
           <h2 className="modal__title">{product.name}</h2>
-          <p className="modal__type">{product.type}</p>
+          <p className="modal__type">{t(product.type)}</p>
           <div className="modal__stars">
             {product.icon.map((icon, iconIndex) => (
               <img

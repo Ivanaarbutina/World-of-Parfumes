@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useShoppingCart } from "../../../contex/shop-context";
 
 type StoreItemProps = {
@@ -18,6 +19,7 @@ const StoreItem = ({
   img,
   openModal,
 }: StoreItemProps) => {
+  const { t } = useTranslation();
   const {
     getItemQuantity,
     increaseCartQuantity,
@@ -33,7 +35,7 @@ const StoreItem = ({
           <img src={img} alt={name} />
         </div>
         <h2 className="product__title">{name}</h2>
-        <p className="product__type">{type}</p>
+        <p className="product__type">{t(type)}</p>
         <div className="product__star">
           {icon.map((icon, iconIndex) => (
             <div key={`stars-${iconIndex}`}>
@@ -52,7 +54,7 @@ const StoreItem = ({
               onClick={() => increaseCartQuantity(id)}
               className="btn--yellow2 btn--md"
             >
-              + Add To Cart
+              {t("cart")}
             </button>
           ) : (
             <div className="btn__section__wrapper">
@@ -64,7 +66,7 @@ const StoreItem = ({
                   &#8722;
                 </button>
                 <div>
-                  <span>{quantity}</span> in cart
+                  <span>{quantity}</span> {t("inCart")}
                 </div>
                 <button
                   className="btn__quantity"
@@ -77,7 +79,7 @@ const StoreItem = ({
                 className="btn--yellow btn--sm"
                 onClick={() => removeFromCart(id)}
               >
-                Remove
+                {t("remove")}
               </button>
             </div>
           )}
@@ -86,7 +88,7 @@ const StoreItem = ({
           className="btn--transparent btn--sm"
           onClick={() => openModal()}
         >
-          Discover
+          {t("discover")}
         </button>
       </div>
     </div>

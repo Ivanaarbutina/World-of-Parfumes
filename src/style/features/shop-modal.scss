@@ -31,10 +31,18 @@
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    max-width: 250px; /* Prilagodite maksimalnu širinu po potrebi */
+    max-width: 280px; /* Prilagodite maksimalnu širinu po potrebi */
     @media (min-width: $media-sm) {
-      max-width: 600px;
-      padding: 20px;
+      max-width: 30rem;
+      padding: 0.6rem;
+    }
+    @media (min-width: $media-md) {
+      max-width: 37rem;
+      padding: 1.3rem;
+    }
+    @media (min-width: $media-xl) {
+      max-width: 40rem;
+      padding: 1.3rem;
     }
   }
   &__title {
@@ -45,10 +53,16 @@
     width: 1rem;
   }
   &__description {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    @media (min-width: $media-sm) {
+      font-size: 1.1rem;
+    }
   }
   &__price {
-    font-size: 2rem;
+    font-size: 1.1rem;
     font-weight: 700;
+    @media (min-width: $media-sm) {
+      font-size: 2rem;
+    }
   }
 }

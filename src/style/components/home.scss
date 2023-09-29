@@ -19,9 +19,11 @@
     font-size: 4rem;
     font-weight: 100;
     text-align: center;
-
     @media (min-width: $media-md) {
-      font-size: 9rem;
+      font-size: 7rem;
+    }
+    @media (min-width: $media-lg) {
+      font-size: 11rem;
     }
   }
 
@@ -33,11 +35,12 @@
       padding: 3rem;
     }
     &__info {
-      font-size: 1.3rem;
-      width: 80%;
+      font-size: 1.1rem;
       margin: 1rem auto;
       @media (min-width: $media-sm) {
+        width: 70%;
         margin: 3rem auto;
+        font-size: 1.5rem;
       }
     }
   }

@@ -95,7 +95,7 @@ const Header = () => {
               }}
               className={"header__nav__link"}
             >
-              contact
+              {t("contact")}
             </a>
 
             <LanguageSwitcher />

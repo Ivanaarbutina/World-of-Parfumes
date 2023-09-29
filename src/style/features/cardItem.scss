@@ -1,11 +1,17 @@
 .cart-item {
   display: flex;
   align-items: center;
-  margin: 1rem;
+  margin: 0.3rem;
   position: relative;
+  @media (min-width: $media-sm) {
+    margin: 1rem;
+  }
 
   & img {
-    width: 6rem;
+    width: 3.5rem;
+    @media (min-width: $media-sm) {
+      width: 6rem;
+    }
   }
 
   &-details {
@@ -16,27 +22,42 @@
     margin: 0.5rem;
   }
   &-name {
-    font-size: 1.2rem;
-    margin-right: 0.8rem;
+    font-size: 1rem;
+    margin-right: 0.4rem;
     font-weight: 700;
+    @media (min-width: $media-sm) {
+      font-size: 1.2rem;
+      margin-right: 0.8rem;
+    }
   }
   &-price {
-    margin-right: 0.8rem;
+    margin-right: 0.4rem;
     font-family: Quicksand;
+    font-size: 0.8rem;
+    @media (min-width: $media-sm) {
+      margin-right: 0.8rem;
+      font-size: 1rem;
+    }
   }
   &-quantity1 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: Quicksand;
+    @media (min-width: $media-sm) {
+      font-size: 1rem;
+    }
   }
 
   &-total {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 700;
     font-family: Quicksand;
+    @media (min-width: $media-sm) {
+      font-size: 1rem;
+    }
   }
   &-remove-button {
     position: absolute;
-    top: 1.8rem;
+    top: 0;
     right: 0;
     &:hover {
       background-color: var(--color-gold);

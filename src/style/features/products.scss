@@ -18,13 +18,20 @@
     margin: 1rem auto;
     text-align: center;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2rem;
+    @media (min-width: $media-sm) {
+      font-size: 3rem;
+    }
   }
   &__shop__desc {
-    max-width: 60%;
-    margin: 1rem auto;
+    margin: 1rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    @media (min-width: $media-sm) {
+      margin: 1rem auto;
+      font-size: 1.2rem;
+      max-width: 60%;
+    }
   }
 
   &__container {
@@ -32,16 +39,21 @@
     align-items: center;
     flex-direction: column;
     border: 1px solid #d4af37;
-    padding: 1rem;
-
+    padding: 0.5rem;
     transition: all 0.3s ease-in-out;
     &:hover {
       box-shadow: var(--light-box-shadow);
     }
+    @media (min-width: $media-sm) {
+      padding: 1rem;
+    }
   }
   &__picture img {
-    width: 12rem;
+    width: 9rem;
     border-radius: var(--border-rounded);
+    @media (min-width: $media-sm) {
+      width: 12rem;
+    }
   }
 
   &__star {

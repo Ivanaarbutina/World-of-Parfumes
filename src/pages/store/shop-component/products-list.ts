@@ -27,7 +27,7 @@ export const productsList: ProductsType[] = [
   {
     img: blueGold,
     name: "Forest dream",
-    type: "eau de toilette for women - 50ml",
+    type: "toilette",
     icon: [star, star, star, star, star],
     desc: "forest-dream",
     price: 69,
@@ -36,7 +36,7 @@ export const productsList: ProductsType[] = [
   {
     img: black,
     name: "Magic night",
-    type: "eau de parfum for women - 75ml",
+    type: "parfume2",
     icon: [star, star, star, star, star],
     desc: "sunshine",
     price: 79,
@@ -45,7 +45,7 @@ export const productsList: ProductsType[] = [
   {
     img: purple,
     name: "Happiness",
-    type: "eau de toilette for women - 50ml",
+    type: "parfume",
     icon: [star, star, star, star, star],
     desc: "happiness",
     price: 55,
@@ -54,7 +54,7 @@ export const productsList: ProductsType[] = [
   {
     img: romantic,
     name: "Butterfly",
-    type: "eau de parfum for women - 75ml",
+    type: "parfume2",
     icon: [star, star, star, star, halfStar],
     desc: "mistique",
     price: 80,
@@ -63,7 +63,7 @@ export const productsList: ProductsType[] = [
   {
     img: clear,
     name: "Ladybug",
-    type: "eau de parfum for women - 75ml",
+    type: "parfume2",
     icon: [star, star, star, star, halfStar],
     desc: "forest-dream",
     price: 82,
@@ -72,7 +72,7 @@ export const productsList: ProductsType[] = [
   {
     img: purpleGold,
     name: "Poison",
-    type: "eau de parfum for women - 100ml",
+    type: "parfume3",
     icon: [star, star, star, star, star],
     desc: "happiness",
     price: 92,
@@ -81,7 +81,7 @@ export const productsList: ProductsType[] = [
   {
     img: flower,
     name: "Summer",
-    type: "eau de parfum for women - 100ml",
+    type: "parfume3",
     icon: [star, star, star, star, star],
     desc: "sunshine",
     price: 95,
@@ -90,7 +90,7 @@ export const productsList: ProductsType[] = [
   {
     img: green,
     name: "Emerald",
-    type: "eau de parfum for women - 50ml",
+    type: "parfume",
     icon: [star, star, star, star, halfStar],
     desc: "mistique",
     price: 73,
@@ -99,7 +99,7 @@ export const productsList: ProductsType[] = [
   {
     img: gold,
     name: "Golden girl",
-    type: "eau de parfum for women - 50ml",
+    type: "parfume",
     icon: [star, star, star, star, star],
     desc: "forest-dream",
     price: 73,
@@ -108,7 +108,7 @@ export const productsList: ProductsType[] = [
   {
     img: amor,
     name: "Amor",
-    type: "eau de toilette for women - 50ml",
+    type: "toilette",
     icon: [star, star, star, star, halfStar],
     desc: "happiness",
     price: 63,
@@ -117,7 +117,7 @@ export const productsList: ProductsType[] = [
   {
     img: beauty,
     name: "Beauty Queen",
-    type: "eau de parfum for women - 50ml",
+    type: "parfume",
     icon: [star, star, star, star, star],
     desc: "sunshine",
     price: 78,
@@ -126,7 +126,7 @@ export const productsList: ProductsType[] = [
   {
     img: glam,
     name: "Glamurous",
-    type: "eau de parfum for women - 50ml",
+    type: "parfume",
     icon: [star, star, star, star, star],
     desc: "mistique",
     price: 75,
