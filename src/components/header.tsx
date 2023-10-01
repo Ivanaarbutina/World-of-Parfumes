@@ -3,8 +3,9 @@ import logo from "./../assets/icons8-perfume-50.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import shoppingCart from "./../assets/shoppingcart.png";
-import LanguageSwitcher from "./LanguageSwitcher";
+// // import LanguageSwitcher from "./LanguageSwitcher";
 import { useShoppingCart } from "../contex/shop-context";
+import { ReactNode } from "react";
 
 type LinkType = {
   label: string;
@@ -21,7 +22,11 @@ const headerLinks: LinkType[] = [
   },
 ];
 
-const Header = () => {
+type HeaderType = {
+  children: ReactNode;
+};
+
+const Header = ({ children }: HeaderType) => {
   const [showHeaderSection, setShowHeaderSection] = useState(false);
   const { t } = useTranslation();
   const { openCart, cartQuantity } = useShoppingCart();
@@ -98,7 +103,10 @@ const Header = () => {
               {t("contact")}
             </a>
 
-            <LanguageSwitcher />
+            {/* <LanguageSwitcher /> */}
+            <div className={`language ${showHeaderSection ? "set" : ""}`}>
+              {children}
+            </div>
           </nav>
         </section>
 
