@@ -64,8 +64,9 @@ $media-sm: 37.5em; //600px
 $media-md: 48em; //768px
 $media-lg: 62em; //992px
 $media-xl: 75em; //1200px
+$media-xxl: 87.5em; //1400px
+$media-xxxl: 125em; //2000px
 //components
-
 @import "./components/button.scss";
 @import "./components/header.scss";
 @import "./components/header-nav.scss";

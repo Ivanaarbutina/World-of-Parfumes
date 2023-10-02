@@ -92,6 +92,10 @@
       font-size: 2rem;
       margin-bottom: 1.3rem;
     }
+    @media (min-width: $media-xxxl) {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
   }
   .img-description-heading,
   .img-description-text {
@@ -109,6 +113,10 @@
     @media (min-width: $media-xl) {
       font-size: 1.1rem;
       padding: 1rem 3rem 6.4rem 3rem;
+    }
+    @media (min-width: $media-xxxl) {
+      font-size: 1.8rem;
+      padding: 1.5rem 5rem 6.4rem 5rem;
     }
   }
   @media (hover) and (prefers-reduced-motion: no-preference) {
