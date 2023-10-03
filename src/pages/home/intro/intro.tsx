@@ -9,7 +9,7 @@ const Intro = () => {
       <motion.h1
         initial={{ opacity: 0 }}
         whileInView={{ y: [-50, 0], opacity: 1 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 1 }}
       >
         {t("parfumes-title")}
       </motion.h1>

@@ -1,16 +1,5 @@
 .language-switcher {
-  // background-image: url(src/assets/black_and_gold_glitter_background_1411.jpg);
-  // background-size: cover;
-
-  background-image: linear-gradient(
-    to right,
-    #0e0d0d 30%,
-    rgb(154, 112, 22),
-    rgb(237, 193, 34)
-  );
-
   display: flex;
-
   flex-direction: row-reverse;
   &__select {
     background-color: var(--color-gray-500);
@@ -28,7 +17,6 @@
 }
 .language.set {
   display: flex;
-
   @media (min-width: $media-md) {
     display: none;
   }

@@ -1,5 +1,5 @@
 import { useShoppingCart } from "../../../contex/shop-context";
-import { formatCurrency } from "../../../utiles/formatCurrency";
+import { formatCurrency } from "../../../components/formatCurrency";
 import { CartItem } from "./cartItem";
 import { productsList } from "./products-list";
 import { useNavigate } from "react-router-dom";

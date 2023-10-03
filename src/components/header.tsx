@@ -85,7 +85,7 @@ const Header = ({ children }: HeaderType) => {
                   key={link.path}
                   href={link.path}
                   onClick={() => {
-                    closeNavMenu(); 
+                    closeNavMenu();
                   }}
                 >
                   {t(link.label)}
@@ -103,7 +103,6 @@ const Header = ({ children }: HeaderType) => {
               {t("contact")}
             </a>
 
-           
             <div className={`language ${showHeaderSection ? "set" : ""}`}>
               {children}
             </div>

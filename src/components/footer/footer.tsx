@@ -14,7 +14,11 @@ const Footer = () => {
       </p>
       <div className="footer__link">
         <span>{t("freepik")}</span>
-        <a href="https://www.freepik.com/" className="footer__link__item">
+        <a
+          href="https://www.freepik.com/"
+          className="footer__link__item"
+          target="_blank"
+        >
           Freepik
         </a>
       </div>

@@ -1,6 +1,6 @@
 import { useShoppingCart } from "../../../contex/shop-context";
 import { productsList } from "./products-list";
-import { formatCurrency } from "../../../utiles/formatCurrency";
+import { formatCurrency } from "./../../../components/formatCurrency";
 
 type CartItemProps = {
   id: number;

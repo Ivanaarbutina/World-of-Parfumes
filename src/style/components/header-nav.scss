@@ -1,6 +1,6 @@
 .hamburger {
   display: block;
-  margin-right: 10px;
+  margin-right: 0.6rem;
   cursor: pointer;
   @media (min-width: $media-md) {
     display: none;
@@ -16,7 +16,6 @@
 
 .nav-menu {
   display: none;
-
   @media (min-width: $media-md) {
     margin-right: 0.5rem;
     display: flex;

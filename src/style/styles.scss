@@ -12,50 +12,16 @@ body {
   --border-rounded: 0.5rem;
 
   //color
-  --color-gray-300: #afafae;
-  --color-gray-400: #4f5051;
   --color-gray-500: #0e0d0d;
-  --color-gray-450: #566573;
-  --color-gray-460: #575e5b;
-  --color-green-100: #00ff62a8;
-  --color-green-hover: #22cdc4;
-  --color-green-150: rgb(127, 159, 150);
-  --color-white-300: #f4f4f4;
   --color-white-400: #f8f8f8;
-  --color-animated-1: #cbdadb;
-  --color-animated-2: #62e4c4;
-  --color-animated-3: #0d4671;
-  --color-card-1: #a1afae;
-  --color-card-2: #7cb4b0;
-  --color-card-3: #93bbb8;
-  --color-card-4: #285678;
-  --color-card-5: #073659;
-  --color-box-1: #424e4c;
-  --color-carmine-1: #731054;
-  --color-carmine-2: #e411a1;
-  --color-carmine-3: #a3909b;
-  --color-table-1: #f1f1f1;
-  --color-table-2: #ddd;
   --color-gold: #d4af37;
   --color-gold-2: #a4810e;
 
   //box-shadows
-  --custom-box-shadow: 1px 2px 2px hsla(219, 9%, 30%, 0.2),
-    2px 4px 4px hsla(219, 9%, 30%, 0.2), 4px 8px 8px hsla(219, 9%, 30%, 0.2),
-    8px 16px 16px hsla(219, 9%, 30%, 0.2),
-    16px 32px 32px hsla(219, 9%, 30%, 0.2);
   --light-box-shadow: 1px 2px 2px hsla(224, 5%, 52%, 0.2),
     2px 4px 4px hsla(224, 5%, 52%, 0.2), 4px 8px 8px hsla(224, 5%, 52%, 0.2),
     8px 16px 16px hsla(224, 5%, 52%, 0.2),
     16px 32px 32px hsla(224, 5%, 52%, 0.2);
-  --hover-box-shadow: 1px 2px 2px hsla(225, 5%, 16%, 0.2),
-    2px 4px 4px hsla(225, 5%, 16%, 0.2), 4px 8px 8px hsla(225, 5%, 16%, 0.2),
-    8px 16px 16px hsla(225, 5%, 16%, 0.2),
-    16px 32px 32px hsla(225, 5%, 16%, 0.2);
-  --blue-box-shadow: 1px 2px 2px hsla(220, 61%, 23%, 0.2),
-    2px 4px 4px hsla(220, 61%, 23%, 0.2), 4px 8px 8px hsla(220, 61%, 23%, 0.2),
-    8px 16px 16px hsla(220, 61%, 23%, 0.2),
-    16px 32px 32px hsla(220, 61%, 23%, 0.2);
 }
 
 //breakpoints
@@ -70,19 +36,18 @@ $media-xxxl: 125em; //2000px
 @import "./components/button.scss";
 @import "./components/header.scss";
 @import "./components/header-nav.scss";
-@import "./components/home.scss";
-@import "./components/intro.scss";
 @import "./components/language-switcher.scss";
-@import "./components/shoppingCard.scss";
+@import "./components/footer.scss";
 
-//features
-@import "./features/about.scss";
-@import "./features/cardItem.scss";
-@import "./features/contact.scss";
-@import "./features/footer.scss";
-@import "./features/products.scss";
-@import "./features/shop-modal.scss";
-@import "./features/socials.scss";
+//home
+@import "./pages/home/intro.scss";
+@import "./pages/home/home.scss";
+@import "./pages/home/about.scss";
+@import "./pages/home/socials.scss";
+@import "./pages/home/contact.scss";
 
-//utils
-@import "./utils/animations.scss";
+//shop
+@import "./pages/shop/cardItem.scss";
+@import "./pages/shop/shop-modal.scss";
+@import "./pages/shop/products.scss";
+@import "./pages/shop/shoppingCard.scss";

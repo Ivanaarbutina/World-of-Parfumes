@@ -6,12 +6,12 @@
   text-align: center;
   align-items: center;
   outline: 2px solid #d4af37;
-  outline-offset: 7px;
+  outline-offset: 0.4rem;
   @media (min-width: $media-sm) {
     padding: 2rem;
   }
   &__wrapper {
-    background-image: url(../assets/abstract-luxury-blur-dark-grey-black-gradient.jpg);
+    background-image: url(../assets/black-gradient.jpg);
     background-size: cover;
     background-position: center;
     padding: 2rem;

@@ -3,7 +3,6 @@
   display: flex;
   padding: 2rem;
   flex-direction: column;
-
   @media (min-width: $media-sm) {
     align-items: center;
     justify-content: space-between;
