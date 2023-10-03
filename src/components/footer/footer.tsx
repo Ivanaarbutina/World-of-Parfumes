@@ -14,18 +14,8 @@ const Footer = () => {
       </p>
       <div className="footer__link">
         <span>{t("freepik")}</span>
-        <a
-          href="https://www.freepik.com/free-ai-image/bottle-perfume-with-red-substance-it_41203007.htm#query=parfume&position=1&from_view=search&track=sph"
-          className="footer__link__item"
-        >
-          Sketchepedia
-        </a>
-        <span> & </span>
-        <a
-          href="https://www.freepik.com/free-ai-image/charming-pampered-pets-play-side-by-side-looking-alert-generated-by-ai_41151542.htm#&position=35&from_view=author"
-          className="footer__link__item"
-        >
-          Vecstock
+        <a href="https://www.freepik.com/" className="footer__link__item">
+          Freepik
         </a>
       </div>
     </div>
