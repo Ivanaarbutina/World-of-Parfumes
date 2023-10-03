@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./style/styles.scss";
 import Home from "./pages/home/home";
 import { ShoppingCartProvider } from "./contex/shop-context";
-import Store from "./pages/store/store";
+import Store from "./pages/store/shop";
 import Header from "./components/header";
 import Contact from "./components/footer/contact";
 import Footer from "./components/footer/footer";

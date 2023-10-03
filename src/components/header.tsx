@@ -85,7 +85,7 @@ const Header = ({ children }: HeaderType) => {
                   key={link.path}
                   href={link.path}
                   onClick={() => {
-                    closeNavMenu(); // Zatvaranje menija nakon klika na link
+                    closeNavMenu(); 
                   }}
                 >
                   {t(link.label)}
@@ -103,7 +103,7 @@ const Header = ({ children }: HeaderType) => {
               {t("contact")}
             </a>
 
-            {/* <LanguageSwitcher /> */}
+           
             <div className={`language ${showHeaderSection ? "set" : ""}`}>
               {children}
             </div>
